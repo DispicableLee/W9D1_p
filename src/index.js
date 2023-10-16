@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
         radius: 5,
         color: "#00FF00"
     });
-    
+
+    mo.draw(ctx);
+    mo.move()
     mo.draw(ctx);
 })
 

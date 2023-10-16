@@ -8,14 +8,15 @@ class MovingObject{
     }
 
     move(){
-
+        this.pos[0] += this.vel[0]
+        this.pos[1] += this.vel[1]
+        // debugger
     }
 
     
     draw(ctx){
         let x = this.pos[0]
         let y = this.pos[1]
-        debugger
 
         ctx.beginPath();
         ctx.arc(x, y, this.radius, 0, 2 * Math.PI);
